@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body style="font-family: sans-serif">
+        <ul>
+            <li>
+                <a href="{{ path('symfony_validator') }}">Validation with Symfony Validator</a>
+                <p>
+                    This example shows how to display error codes when validating an object using
+                    the <code>symfony/validator</code> component.
+                    <br>
+                    Implemented in <code>\App\Controller\DefaultController::validatorComponent</code>.
+                    <br>
+                    See <code>\App\Serializer\FormErrorHandler</code> for implementation details.
+                </p>
+            </li>
+            <li>
+                <a href="{{ path('symfony_form') }}">Validation with Symfony Form</a>
+                <p>
+                    This example shows how to display error codes when validating an object using
+                    the <code>symfony/form</code> component.
+                    <br>
+                    Implemented in <code>\App\Controller\DefaultController::formComponent</code>.
+                    <br>
+                    See <code>\App\Serializer\FormErrorHandler</code> for implementation details.
+                </p>
+
+            </li>
+        </ul>
+    </body>
+</html>
