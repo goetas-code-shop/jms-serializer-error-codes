@@ -28,6 +28,17 @@ bin/console server:run 127.0.0.1:8081 -vv
 Open your browser and visit http://localhost:8081.
 
 
+## How it works
+
+Error codes works thanks to:
+
+- `\App\Entity\Customer` defines some error codes in the `payload` of the `@Assert\*` annotations
+- In case of validation errors, the `\App\Serializer\FormErrorHandler` or `\App\Serializer\ConstraintViolationHandler`
+copy the validation error to the JSON response that is produced by `jms/serializer`.
+
+
+
+
 
 
 

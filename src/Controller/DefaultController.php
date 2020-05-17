@@ -24,6 +24,8 @@ class DefaultController extends AbstractController
     }
 
     /**
+     * Index page to display the examples.
+     *
      * @Route("/")
      */
     public function index()
